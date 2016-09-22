@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<RelativeLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Add email here"
+        android:id="@+id/email"
+        android:layout_toLeftOf="@+id/signIn"
+        android:layout_toStartOf="@+id/signIn" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signIn"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/signIn"
+        android:layout_toEndOf="@+id/signIn" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/signUppasswd"
+        android:layout_alignTop="@+id/signUpmail"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/signUpmail"
+        android:layout_below="@+id/signIn"
+        android:layout_toLeftOf="@+id/signIn"
+        android:layout_toStartOf="@+id/signIn"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:id="@+id/signup"
+        android:layout_below="@+id/signUppasswd"
+        android:layout_toLeftOf="@+id/signUppasswd"
+        android:layout_toStartOf="@+id/signUppasswd"
+        android:layout_marginTop="56dp"
+        />
+
+</RelativeLayout>
+
+</ScrollView>
+</LinearLayout>
